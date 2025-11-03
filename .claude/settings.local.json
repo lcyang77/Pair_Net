@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(nul)",
+      "Bash(dir:*)",
+      "Bash(chmod:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(if [ -f nul ])",
+      "Bash(then rm nul)",
+      "Bash(else echo \"nul 文件不存在\")",
+      "Bash(fi)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

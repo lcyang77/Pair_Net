@@ -1,0 +1,418 @@
+# ESP-IDF Project .gitignore
+# Generated for ESP32-C2 UART-to-MQTT Gateway Project
+
+# ═══════════════════════════════════════════════════════════
+# ESP-IDF Build System
+# ═══════════════════════════════════════════════════════════
+
+# Build directory
+/build/
+build/
+
+# Dependencies directory
+/dependencies/
+dependencies/
+
+# Managed components
+/managed_components/
+managed_components/
+
+# SDKConfig files (generated from sdkconfig.defaults)
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+
+# Kconfig backup files
+*.config.old
+
+# Menuconfig backup
+.config.old
+
+# ═══════════════════════════════════════════════════════════
+# Python Virtual Environment
+# ═══════════════════════════════════════════════════════════
+
+# Virtual environment directories
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ═══════════════════════════════════════════════════════════
+# IDE and Editor
+# ═══════════════════════════════════════════════════════════
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# JetBrains IDEs (CLion, IntelliJ, PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+cmake-build-*/
+
+# Eclipse
+.cproject
+.project
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ═══════════════════════════════════════════════════════════
+# Operating System
+# ═══════════════════════════════════════════════════════════
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ═══════════════════════════════════════════════════════════
+# Compilation and Binary Files
+# ═══════════════════════════════════════════════════════════
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# ═══════════════════════════════════════════════════════════
+# ESP-IDF Specific
+# ═══════════════════════════════════════════════════════════
+
+# Flash download config
+flash_project_args
+
+# Serial monitor logs
+*.log
+
+# Bootloader and partition table binaries (generated)
+bootloader.bin
+partition-table.bin
+ota_data_initial.bin
+
+# Application binary (generated)
+*.bin
+!partitions.csv
+
+# Size analysis files
+size.json
+size_compare.html
+
+# IDF monitor data
+idf_monitor_data/
+
+# Component test builds
+test_build*/
+
+# ═══════════════════════════════════════════════════════════
+# Project Specific
+# ═══════════════════════════════════════════════════════════
+
+# Local configuration (if you create local overrides)
+sdkconfig.local
+local_config.h
+
+# Test and temporary files
+test/
+tests/
+*.test
+tmp/
+temp/
+
+# Documentation build output (if using Sphinx/Doxygen)
+docs/_build/
+docs/doxygen/
+html/
+latex/
+
+# Backup files
+*.backup
+*.orig
+*.rej
+
+# Core dumps
+core
+core.*
+
+# Tags files
+TAGS
+tags
+.tags
+.tags1
+gtags.files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# ctags
+.ctags
+
+# cscope
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
+
+# ═══════════════════════════════════════════════════════════
+# Credentials and Secrets (IMPORTANT!)
+# ═══════════════════════════════════════════════════════════
+
+# Never commit credentials!
+*secrets*
+*credentials*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.env
+.env.local
+.env.*.local
+secrets.h
+credentials.h
+
+# Configuration with sensitive data
+*_private.h
+*_secret.h
+
+# ═══════════════════════════════════════════════════════════
+# Logs and Monitoring
+# ═══════════════════════════════════════════════════════════
+
+# Log files
+*.log
+logs/
+log/
+*.tlog
+
+# Monitor output
+monitor.txt
+serial_output.txt
+
+# ═══════════════════════════════════════════════════════════
+# Miscellaneous
+# ═══════════════════════════════════════════════════════════
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Package manager lock files (if using)
+package-lock.json
+yarn.lock
+
+# Node modules (if using any JavaScript tools)
+node_modules/
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# ═══════════════════════════════════════════════════════════
+# Keep These Files (Exceptions)
+# ═══════════════════════════════════════════════════════════
+
+# Keep important config files
+!sdkconfig.defaults
+!partitions.csv
+!CMakeLists.txt
+!Makefile
+!components/**/CMakeLists.txt
+
+# Keep documentation
+!README.md
+!LICENSE
+!CLAUDE.md
+!Doc/
+
+# Keep example configurations
+!example_config.h
+!template_*.h

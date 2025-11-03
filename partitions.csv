@@ -1,0 +1,8 @@
+otadata,        data,   ota,     0x9000,    0x2000
+phy_init,       data,   phy,     ,          0x1000,
+verify,         data,   nvs,     ,          0x1000,
+ini,            data,   spiffs,  ,          0x3000,
+ota_0,          app,    ota_0,   0x10000,   0xF0000,
+ota_1,          app,    ota_1,   0x100000,  0xF0000,
+kvs,            data,   nvs,     ,          0x6000,
+nvs,            data,   nvs,     ,          0x4000,
